@@ -89,3 +89,10 @@ right_bot.addEventListener("click", function() {
 })
 
 //problem 5
+const roll_bot = document.querySelector(".roll");
+
+roll_bot.addEventListener("click", function() {
+    let roll_res = document.querySelector(".roll_result");
+    let dice_side = document.querySelector(".dice_input");
+    roll_res.textContent= Math.ceil(dice_side.value * Math.random());
+})
