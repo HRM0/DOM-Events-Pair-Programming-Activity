@@ -35,3 +35,12 @@ smaller.addEventListener("click", function() {
     let ptxt = document.querySelector(".ptext");
     ptxt.style.fontSize= `${textsize}px`;
 })
+
+const bgcolor = document.querySelector(".changeColor");
+
+bgcolor.addEventListener("click", function() {
+
+    let color = document.querySelector(".input");
+    document.body.style.backgroundColor= color.value;
+})
+
