@@ -2,3 +2,16 @@
     display:flex;
     height:5em;
 }
+
+.ex4 {
+    display:flex;
+}
+
+.crane_buttons {
+    display:flex;
+    flex-direction: column;
+}
+
+.crane {
+    position: relative;
+}

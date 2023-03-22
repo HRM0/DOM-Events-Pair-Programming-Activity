@@ -8,6 +8,8 @@ counter.addEventListener("click", function() {
     counterHTML.innerHTML = counterValue += 1;
 })
 
+
+//problem 2
 const bigger = document.querySelector(".bigger");
 
 let textsize = 18
@@ -36,6 +38,7 @@ smaller.addEventListener("click", function() {
     ptxt.style.fontSize= `${textsize}px`;
 })
 
+//problem 3
 const bgcolor = document.querySelector(".changeColor");
 
 bgcolor.addEventListener("click", function() {
@@ -44,3 +47,45 @@ bgcolor.addEventListener("click", function() {
     document.body.style.backgroundColor= color.value;
 })
 
+//problem 4
+const up_bot = document.querySelector(".up");
+
+let up_move = 0;
+
+up_bot.addEventListener("click", function() {
+    up_move -= 1
+    let crane_pic = document.querySelector(".crane");
+    crane_pic.style.top = `${up_move}px`;
+})
+
+const down_bot = document.querySelector(".down");
+
+let down_move = 0;
+
+down_bot.addEventListener("click", function() {
+    down_move += 1
+    let crane_pic = document.querySelector(".crane");
+    crane_pic.style.top = `${down_move}px`;
+})
+
+const left_bot = document.querySelector(".left");
+
+let left_move = 0;
+
+left_bot.addEventListener("click", function() {
+    left_move -= 1
+    let crane_pic = document.querySelector(".crane");
+    crane_pic.style.left = `${left_move}px`;
+})
+
+const right_bot = document.querySelector(".right");
+
+let right_move = 0;
+
+right_bot.addEventListener("click", function() {
+    right_move += 1
+    let crane_pic = document.querySelector(".crane");
+    crane_pic.style.left = `${right_move}px`;
+})
+
+//problem 5
