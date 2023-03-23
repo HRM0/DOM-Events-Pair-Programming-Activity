@@ -11,20 +11,20 @@ counter.addEventListener("click", function() {
 
 //problem 2
 const bigger = document.querySelector(".bigger");
-
+const smaller = document.querySelector(".smaller");
+let ptxt = document.querySelector(".ptext");
 let textsize = 18
 
 bigger.addEventListener("click", function() {
+    
     if (textsize === 100) {
         console.log("can't be bigger than 100")
     } else {
         textsize += 1;
     }
-    let ptxt = document.querySelector(".ptext");
+
     ptxt.style.fontSize= `${textsize}px`;
 })
-
-const smaller = document.querySelector(".smaller");
 
 smaller.addEventListener("click", function() {
 
@@ -34,7 +34,6 @@ smaller.addEventListener("click", function() {
         textsize -= 1;
     }
 
-    let ptxt = document.querySelector(".ptext");
     ptxt.style.fontSize= `${textsize}px`;
 })
 

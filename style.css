@@ -1,5 +1,29 @@
-.cookie-container {
+body {
     display:flex;
+    flex-direction: column;
+    width:50%;
+    align-content: center;
+    margin: 0 20% 0 20%;
+    padding:2em;
+    border-bottom: "1px solid black";
+}
+
+.ex1, .ex2, .ex3, .ex4, .ex5 {
+    display:flex;
+    
+    border-top: 2px solid black;
+    padding: 2em;
+    width: 100%;
+    justify-content: center;
+}
+
+.ex1 {
+    display:flex;
+    height:5em;
+}
+
+.count-cookie {
+    align-self: center;
     height:5em;
 }
 
